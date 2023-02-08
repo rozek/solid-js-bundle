@@ -4,8 +4,6 @@
   "description": "just a solid-js package bundle for no-compile environments",
   "type": "module",
   "main": "./dist/solid-js-bundle.js",
-  "module": "./dist/solid-js-bundle.esm.js",
-  "svelte": "./dist/solid-js-bundle.esm.js",
   "types": "./dist/solid-js-bundle.d.ts",
   "exports": {
     ".": {
