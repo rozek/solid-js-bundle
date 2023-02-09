@@ -1,7 +1,10 @@
   import {
-    createSignal, createEffect, createMemo, createResource, Suspense,
+    createSignal, createEffect, createMemo, createRoot,
+    createContext, useContext,
+    createResource, Suspense, SuspenseList,
       on, batch, lazy, untrack,
     Show, For, Index, Switch, Match,
+    mergeProps, splitProps, children,
     onMount, onCleanup,
     useTransition
   } from 'solid-js'
@@ -22,17 +25,20 @@
     ErrorBoundary
   } from 'solid-js/web'
 
-  import { createStore } from 'solid-js/store'
+  import { createStore, reconcile } from 'solid-js/store'
 
   export {
-    createSignal, createEffect, createMemo, createResource, Suspense,
+    createSignal, createEffect, createMemo, createRoot,
+    createContext, useContext,
+    createResource, Suspense, SuspenseList,
       on, batch, lazy, untrack,
     Show, For, Index, Switch, Match,
+    mergeProps, splitProps, children,
     onMount, onCleanup,
     useTransition,
     html,
     render, Dynamic, Portal,
     ErrorBoundary,
-    createStore,
+    createStore, reconcile,
     observable
   }
