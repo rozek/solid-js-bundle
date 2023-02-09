@@ -1,6 +1,6 @@
 {
   "name": "solid-js-bundle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "just a solid-js package bundle for no-compile environments",
   "type": "module",
   "main": "./dist/solid-js-bundle.js",
